@@ -1,0 +1,51 @@
+Arguments: 
+  /usr/bin/node /usr/bin/yarn add mongus
+
+PATH: 
+  /home/alex/.config/composer/vendor/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/var/lib/flatpak/exports/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/var/lib/flatpak/exports/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl
+
+Yarn version: 
+  1.15.2
+
+Node version: 
+  11.13.0
+
+Platform: 
+  linux x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/mongus: Not found
+      at Request.params.callback [as _callback] (/usr/lib/node_modules/yarn/lib/cli.js:66058:18)
+      at Request.self.callback (/usr/lib/node_modules/yarn/lib/cli.js:129541:22)
+      at Request.emit (events.js:193:13)
+      at Request.<anonymous> (/usr/lib/node_modules/yarn/lib/cli.js:130513:10)
+      at Request.emit (events.js:193:13)
+      at IncomingMessage.<anonymous> (/usr/lib/node_modules/yarn/lib/cli.js:130435:12)
+      at Object.onceWrapper (events.js:281:20)
+      at IncomingMessage.emit (events.js:198:15)
+      at endReadableNT (_stream_readable.js:1142:12)
+      at processTicksAndRejections (internal/process/task_queues.js:81:17)
+
+npm manifest: 
+  {
+    "name": "backend",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "MIT",
+    "scripts": {
+      "dev": "nodemon src/server.js",
+      "start": "node src/server.js"
+    },
+    "dependencies": {
+      "express": "^4.16.4"
+    },
+    "devDependencies": {
+      "nodemon": "^1.18.10"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
